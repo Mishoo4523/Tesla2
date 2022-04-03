@@ -1,0 +1,489 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-family: gotham-medium;
+}
+
+@font-face {
+  font-family: gotham-bold;
+  src: url("/assets/fonts/GothamSSm-Bold_Web.woff2");
+}
+
+@font-face {
+  font-family: gotham-book;
+  src: url("/assets/fonts/GothamSSm-Book_Web.woff2");
+}
+
+@font-face {
+  font-family: gotham-light;
+  src: url("/assets/fonts/GothamSSm-Light_Web.woff2");
+}
+
+@font-face {
+  font-family: gotham-medium;
+  src: url("/assets/fonts/GothamSSm-Medium_Web.woff2");
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.model3 {
+  background-image: url("/assets/img/M3-Hero-LHD-US-D.jfif");
+  background-size: 100%;
+  background-position-y: 35%;
+  text-align: center;
+  color: white;
+}
+
+.model3 h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 240px;
+}
+
+.performance {
+  background-size: 100%;
+  scroll-snap-align: start;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+}
+
+.logo {
+  position: sticky;
+  float: left;
+  top: 18px;
+  left: 50px;
+  width: 120px;
+  fill: white;
+}
+
+.top-nav {
+  width: fit-content;
+  margin-left: 34%;
+}
+
+.top-nav li {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 15px;
+  transition: background-color ease 0.5s;
+  background-color: rgb(117,123,131,0);
+}
+
+.top-nav li:hover {
+  transition: background-color ease 0.5s;
+  background-color: rgb(117,123,131,1);
+}
+
+.right-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  margin: auto;
+  width: fit-content;
+}
+
+.right-nav li {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 15px;
+  transition: background-color ease 0.5s;
+  background-color: rgb(117,123,131,0);
+}
+
+.right-nav li:hover {
+  transition: background-color ease 0.5s;
+  background-color: rgb(117,123,131,1);
+}
+
+.side-bar {
+  position: absolute;
+  top: 340px;
+  left: 8px;
+}
+
+.side-bar li {
+  list-style: none;
+  text-align: left;
+  border-width: 0px 0px 0px 1px;
+  border-style: solid;
+  border-color: rgb(106, 111, 124);
+  color: rgb(226, 228, 228, 0);
+  margin: 6px 0 0 6px;
+  padding: 0 0 0 6px;
+  font-size: 10px;
+  line-height: 24px;
+}
+
+.side-bar .white-border {
+  border-color: white;
+  border-width: 0px 0px 0px 3px;
+}
+
+.side-bar li:hover {
+  transition: color ease 0.2s;
+  color: rgb(226, 228, 228, 1);
+}
+
+.clr {
+  clear: both;
+}
+
+.inline {
+  display: inline;
+}
+
+.dashboard {
+  position: relative;
+  bottom: -55%;
+  width: fit-content;
+  height: 200px;
+  margin: auto;
+}
+
+.dashboard h2 {
+  font-size: 28px;
+  line-height: 30px;
+  font-family: gotham-medium;
+  font-weight: 500;
+}
+
+.dashboard * {
+  margin: 5px 15px;
+}
+
+.speed {
+  float: left;
+  vertical-align: middle;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+.down-dash .speed-detail1 {
+  padding-left: 80px;
+  padding-right: 15px;
+}
+
+
+.speed-detail1 {
+  float: left;
+  width: 20px;
+  margin-top: 10px;
+  height: 40px;
+}
+
+.speed-detail2 {
+  float: left;
+}
+
+.range {
+  float: left;
+  vertical-align: middle;
+}
+
+.motor {
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.button-container {
+  vertical-align: middle;
+
+  float: left;
+  position: relative;
+}
+
+.order-button {
+  background-color: rgb(0, 0, 0, 0);
+  padding: 9px 30px;
+  border-radius: 23px;
+  border: 3px solid white;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.order-button:hover {
+  cursor: pointer;
+
+  transition: background-color ease 0.5s;
+  color: black;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+
+.arrow {
+  font-size: 48px;
+}
+
+.safety {
+  color: black;
+}
+
+.dark-logo {
+  fill: black;
+}
+
+.side-container {
+  width: 22%;
+  height: 100vh;
+  float: left;
+  background-color: white;
+  padding: 0px 50px;
+}
+
+.side-bar--safety {
+  position: absolute;
+  top: 1275px;
+  left: 8px;
+}
+
+.side-bar--safety li {
+  list-style: none;
+  text-align: left;
+  border-width: 0px 0px 0px 1px;
+  border-style: solid;
+  border-color: rgb(198, 199, 200);
+  color: rgb(128, 129, 228, 0);
+  margin: 6px 0 0 6px;
+  padding: 0 0 0 6px;
+  font-size: 10px;
+  line-height: 24px;
+}
+
+.side-bar--safety .dark-border {
+  border-color: rgb(24, 27, 33);
+  border-width: 0px 0px 0px 3px;
+}
+
+.side-bar--safety li:hover {
+  transition: color ease 0.2s;
+  color: rgb(24, 27, 33, 1);
+}
+
+.main-safety {
+  width: 78%;
+  height: 100vh;
+  float: right;
+  background-image: url("/assets/img/model_3_safety_hero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-position-y: 20px;
+
+  background-color: rgb(242, 242, 242);
+}
+
+.main-safety * {
+  position: absolute;
+}
+
+.safety-text .light-font {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.light-font {
+  font-family: gotham-light;
+  font-weight: 400;
+}
+
+.safety-text {
+  /* background-color: yellowgreen; */
+  color: #393c41;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 28px;
+}
+
+.safety-text h1 {
+  color: #181b21;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 3px 0px 15px;
+}
+
+.impact-protection {
+  top: 1100px;
+  left: 800px;
+  height: 250px;
+  padding: 3px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 0 3px;
+}
+
+.rigid-structure {
+  top: 1000px;
+  left: 1115px;
+  height: 190px;
+  padding: 0px 0 40px 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 0 3px;
+}
+
+.rollover-risk {
+  top: 1500px;
+  left: 1170px;
+  height: 180px;
+  padding: 160px 0 0 3px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 0 3px;
+}
+
+.grey-card {
+  background-color: rgb(226, 228, 228);
+  border-radius: 25px;
+  padding: 15px;
+  margin: 18px 0px;
+}
+
+.grey-card .card-title {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.grey-card li {
+  list-style: none;
+  background-color: yellowgreen;
+  margin: 10px 0;
+}
+
+.item {
+  float: left;
+  font-family: gotham-bold;
+}
+
+.rating-list {
+  width: 100%;
+  margin: 20px 5px;
+}
+
+.rating-list .smaller {
+  font-size: 8px;
+  line-height: 8px;
+}
+
+.rating-list .stars {
+  float: right;
+  margin-right: 20px;
+  color: #393c41;
+  font-size: 17px;
+}
+
+.side-footer {
+  position: relative;
+  top: 220px;
+}
+
+.dark-button {
+  background-color: rgb(0, 0, 0, 0);
+  padding: 12px 30px;
+  border-radius: 23px;
+  border: 3px solid rgb(0, 0, 0);
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: black;
+  vertical-align: middle;
+}
+
+.dark-button:hover {
+  transition: background-color ease 0.5s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.plus {
+  background-image: url("/assets/img/plus-sign.png");
+  border-radius: 50%;
+  padding: 18px;
+  background-size: 40%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+.plus-container {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -10px;
+}
+
+.perf-top {
+  width: 100%;
+  height: 73%;
+  background-image: url("/assets/img/lhd-performance-hero-desktop.jfif");
+  background-repeat: no-repeat;
+  background-position-y: 46%;
+  color: white;
+}
+
+.bottom-cont {
+  width: 950px;
+  margin: 30px auto;
+}
+
+.left-perf {
+  float: left;
+}
+
+.right-perf {
+  float: right;
+  width: 600px;
+  margin: 20px 0 0 15px;
+
+}
+
+.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.down-dash {
+  position: relative;
+  top: 78%;
+}
+
+.side-bar--perf {
+  position: absolute;
+  top: 2210px;
+  left: 8px;
+}
